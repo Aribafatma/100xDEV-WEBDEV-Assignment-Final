@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Cards</title>
+  <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+  <h1>Pokémon Card Generator</h1>
+
+  <div class="controls">
+    <input type="number" id="count" placeholder="Number of cards">
+    <select id="category">
+      <option value="fire">Fire</option>
+      <option value="water">Water</option>
+      <option value="electric">Electric</option>
+      <option value="grass">Grass</option>
+      <option value="psychic">Psychic</option>
+    </select>
+    <button onclick="generateCards()">Generate</button>
+  </div>
+
+  <div id="cards" class="card-container"></div>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
